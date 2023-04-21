@@ -1,10 +1,9 @@
-> # **Tema 2 - Compresia imaginilor utilizand arbori**
-> ### made by: *Ghindea Daniel - Teodor 315CB* 
->---
-> Cerinta temei:  
-><https://1drv.ms/b/s!Anf80JE8EFUq_WM1K2lQko6SAXHE?e=NZEhCO>
-> 
->---
+# **Tema 2 - Compresia imaginilor utilizand arbori**
+### made by: *Ghindea Daniel - Teodor 315CB* 
+---
+ Cerinta temei:  
+<https://1drv.ms/b/s!Anf80JE8EFUq_WM1K2lQko6SAXHE?e=NZEhCO>
+---
 ## **Structura programului:**
 
 ##   - `header.h`
