@@ -1,10 +1,10 @@
 # **Compresia imaginilor utilizand arbori**   
-Temă realizată în cadrul cursului de Structuri de Date și Algoritmi, anul I  
+Temă realizată în cadrul cursului de **Structuri de Date și Algoritmi**, anul I  
 
 *made by: Ghindea Daniel 315CB*   
 *about: comprimarea și decomprimarea fisierelor .ppm + determinarea unor proprietăți*
 #
-### Cerinta temei:  
+### Cerința temei:  
 <https://1drv.ms/b/s!Anf80JE8EFUq_WM1K2lQko6SAXHE?e=NZEhCO>
 #
 ### **Structura programului:**
