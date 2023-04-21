@@ -1,4 +1,4 @@
-# **Compresia imaginilor .ppm utilizand arbori**   
+# **Compresia imaginilor .ppm utilizând arbori**   
 Temă realizată în cadrul cursului de **Structuri de Date și Algoritmi**, anul I  
 
 *made by: Ghindea Daniel 315CB*   
