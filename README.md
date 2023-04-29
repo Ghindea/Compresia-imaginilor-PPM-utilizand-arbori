@@ -1,19 +1,17 @@
-# **Compresia imaginilor .ppm utilizând arbori**   
-Temă realizată în cadrul cursului de **Structuri de Date și Algoritmi**, anul I  
+# **Compresia imaginilor utilizand arbori** 
+Temă realizată în cadrul cursului de Structuri de Date și Algoritmi, anul I, ACS-CTI  
+made by: *Ghindea Daniel - Teodor 315CB*  
 
-*made by: Ghindea Daniel 315CB*   
-*about: comprimarea și decomprimarea fisierelor .ppm + determinarea unor proprietăți*
-#
-### Cerința temei:  
+### **Cerinta temei:**
 <https://1drv.ms/b/s!Anf80JE8EFUq_WM1K2lQko6SAXHE?e=NZEhCO>
-#
+
 ### **Structura programului:**
 
 ###   - `header.h`
 - contine definirea structurilor utilizate in program. tipul "**RGB**" se foloseste pentru a retine culoarea unui bloc, pe canale. "**TArb**"/"**TNod**" sunt folosite pentru implementarea arborelui cuaternar, retinand tipul nodului (1 - frunza/ 0 - parinte), culoarea (tip RGB) si adresele celor 4 fii. "**TCoada**", impreuna cu "**TLista**"/"**TCelula**" au rol in implementarea cozii folosite pentru parcurgerea pe nivel (vezi task 2 si task 3). pe langa acestea se regasesc si antetele functiilor utilizate in program.
 
 ###   - `main.c`
-- contine initializarea poinerilor de fisier, citirea datelor si apelarea functiilor corespunzatoare fiecarei cerinte
+- contine initializarea poinerilor de fisier, citirea datelor, apelarea functiilor corespunzatoare fiecarei cerinte, precum si eliberarea zonelor de memorie alocate dinamic.
 
 ###   - `functions.c`
 - contine functii folosite in una sau mai multe cerinte:
@@ -43,4 +41,12 @@ Temă realizată în cadrul cursului de **Structuri de Date și Algoritmi**, anu
     - se elimina primul element al cozii
 - odata format arborele, se apeleaza functia recursiva `[makeMatrix]` care, pe baza acestuia, construieste matricea imaginii. daca nodul este neterminal, in submatricea de marime "**size**", aflata la linia "**x**" si coloana "**y**", se pun datele RGB ale nodului, altfel se face apelul cu "**size**" injumatatit si coordonate aferente celor 4 subzone
 - la final, matricea este scrisa in fisierul .ppm, alaturi de ceilalti parametri.
+
+### **Punctaj final:**
+- Cerinta 1 : 20.0
+- Cerinta 2 : 30.0
+- Cerinta 3 : 30.0
+- Total     : 80.0
+- Bonus     : 20.0
 ---
+

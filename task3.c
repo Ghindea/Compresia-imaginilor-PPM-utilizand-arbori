@@ -5,7 +5,7 @@ TArb initArb() {
     
     return root;
 }
-void readNod(TArb *arb, FILE *in) {
+void readNod(TArb *arb, FILE *in) {                                // citire date
     fread(&((*arb)->type), sizeof(unsigned char), 1, in);
     if ((*arb)->type) {
         fread(&((*arb)->data.red),  sizeof(unsigned char), 1, in);
@@ -13,11 +13,11 @@ void readNod(TArb *arb, FILE *in) {
         fread(&((*arb)->data.blue), sizeof(unsigned char), 1, in);
     }
 }
-void makeMatrix(RGB **grid, TArb arb, int size, int x, int y) {
+void makeMatrix(RGB **grid, TArb arb, int size, int x, int y) {     // scrierea datelor din arbore in matrice
     if (arb->type) {
         for (int i = x; i < x + size; i++) {
             for (int j = y; j < y + size; j++) {
-                grid[i][j].red      = arb->data.red - 60; 
+                grid[i][j].red      = arb->data.red; 
                 grid[i][j].green    = arb->data.green; 
                 grid[i][j].blue     = arb->data.blue; 
             }
@@ -39,8 +39,8 @@ void task3(FILE *in, FILE *out) {
     readNod(&arb, in);
     TCoada *Q = initQ();
     addCell(Q, arb);
-    // daca arb->type == 1 ar trb sa scriu direct matricea;
-
+    
+    /* formarea arborelui cu ajutorul unei cozi (prin parcurgere pe nivel)*/
     while (Q->inc) {
         if (! Q->inc->info->type) {     /* daca am nod neterminal */
             /* initializez copiii nodului */
@@ -66,7 +66,10 @@ void task3(FILE *in, FILE *out) {
     for (int i = 0; i < size; i++) {
         grid[i]= malloc(size * sizeof(RGB));
     }
+    /* formarea matricei*/
     makeMatrix(grid, arb, size, 0, 0);
+
+    /* afisare */
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++) {
             fwrite(&(grid[i][j].red), sizeof(unsigned char), 1, out);
@@ -75,4 +78,9 @@ void task3(FILE *in, FILE *out) {
 
         }
     }
+
+    /* eliberare memorie */
+    cleanGrid(grid, size);
+    cleanArb(arb);
+    cleanQ(Q);
 }

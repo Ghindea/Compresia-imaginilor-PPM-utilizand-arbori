@@ -1,11 +1,10 @@
 CC = gcc
-CFLAGS = -g -Wall
+CFLAGS = -g -Wall -std=c11
 build:
 	$(CC) *.c $(CFLAGS) -o quadtree
 
 run: build
-	./quadtree -d cb.out test.ppm 
-
+	./quadtree
 valgrind: 
 	valgrind --leak-check=yes --track-origins=yes ./quadtree
 

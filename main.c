@@ -19,7 +19,11 @@ int main(int argc, char *argv[])
         } else {
                 TArb arb = makeArb(grid, 0, 0, size, factor);
                 task2(arb, &size, out);
+                cleanArb(arb);
         }
+        fclose(in);
+        fclose(out);
+        cleanGrid(grid, size);
     } else {                            /*----- Task 3 ----- */
         FILE *in = fopen(argv[2], "r");
         FILE *out = fopen(argv[3], "w+");
@@ -30,6 +34,8 @@ int main(int argc, char *argv[])
                 printf("err: cannot open output file!");
         }
         task3(in,out);
+        fclose(in);
+        fclose(out);
     }
     return 0;
 }

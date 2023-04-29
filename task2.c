@@ -2,7 +2,7 @@
 
 void task2(TArb arb, unsigned int *size, FILE *out) {
     TCoada *Q = initQ();
-    addCell(Q, arb);
+    addCell(Q, arb);    /* inserare radacina in coada */
     fwrite(size, sizeof(unsigned int), 1, out);
 
     while (Q->inc) {
@@ -21,4 +21,5 @@ void task2(TArb arb, unsigned int *size, FILE *out) {
         /* extragere */
         extrQ(Q);
     }
+    cleanQ(Q);  // eliberare memorie
 }
