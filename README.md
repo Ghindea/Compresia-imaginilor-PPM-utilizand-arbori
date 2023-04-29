@@ -24,7 +24,7 @@ made by: *Ghindea Daniel - Teodor 315CB*
 - contine rezolvarea primei cerinte:
     - `[nrNiv]`  - returneaza numarul de nivele ale arborelui
     - `[frunze]` - cum datele referitoare la culoarea unui bloc se afla doar pe nodurile terminale ale arborelui cuaternar, pentru a calcula numarul de blocuri din imagine pentru care scorul similaritatii pixelilor este <= decat factorul furnizat este indeajuns sa determinam numarul de frunze ale arborelui
-    - `size / (1 << (nrNivMin(img)-1))` - dat fiind ca fiecare nivel al arborelui (cu exceptia radacinii) corespunde unui cvadruplet de blocuri cu lungimile laturilor injumatatite fata de lungimile precedente, se poate determina lungimea unui bloc impartind `lungimea imaginii` ("**size**") la `2^index_nivel` . pentru a determina dimensiunea laturii celui mai mare patrat nedivizat este suficient sa determinam nivelul minim pe care se afla o frunza.
+    - `size / (1 << nrNivMin(img, 0))` - dat fiind ca fiecare nivel al arborelui (cu exceptia radacinii) corespunde unui cvadruplet de blocuri cu lungimile laturilor injumatatite fata de lungimile precedente, se poate determina lungimea unui bloc impartind `lungimea imaginii` ("**size**") la `2^index_nivel` . pentru a determina dimensiunea laturii celui mai mare patrat nedivizat este suficient sa determinam nivelul minim pe care se afla o frunza.
 
 ###   - `task2.c`
 - contine rezolvarea celei de-a doua cerinte. pentru a parcurge arborele cuaternal pe nivel se implementeaza o coada, sub forma unei liste simplu inlantuite, la inceputul careia se introduce radacina arborelui si care, cat timp coada e nevida, functioneaza dupa cum urmeaza:
