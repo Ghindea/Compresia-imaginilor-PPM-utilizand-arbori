@@ -1,3 +1,5 @@
+/* GHINDEA DANIEL-TEODOR 315CB */
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -26,7 +28,7 @@ TArb makeArb(RGB **grid, int x, int y, int size, int factor);
 RGB ** readData(unsigned int *size, FILE *in);
 
 /* extra functions */
-long int average(RGB **grid, RGB *avg, unsigned int x, unsigned int y, unsigned int size);
+long long average(RGB **grid, RGB *avg, unsigned int x, unsigned int y, unsigned int size);
 void * initQ();
 void extrQ(TCoada *L);
 void addCell(TCoada *L, TArb root);

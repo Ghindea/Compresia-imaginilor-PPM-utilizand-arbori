@@ -1,8 +1,10 @@
+/* GHINDEA DANIEL-TEODOR 315CB */
+
 #include "header.h"
 
-long int average(RGB **grid, RGB *avg, unsigned int x, unsigned int y, unsigned int size) {
+long long average(RGB **grid, RGB *avg, unsigned int x, unsigned int y, unsigned int size) {
     int red = 0, green = 0, blue = 0;
-    long int mean = 0;
+    long long mean = 0;
 
     /* culoare medie pe canale de culori (RGB) */
     for (int i = x; i < x+size; i++) {

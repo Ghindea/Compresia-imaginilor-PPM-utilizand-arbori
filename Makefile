@@ -1,7 +1,7 @@
 CC = gcc
-CFLAGS = -g -Wall -std=c11
+CFLAGS = -g -Wall -std=c11 -m64
 build:
-	$(CC) *.c $(CFLAGS) -o quadtree
+	$(CC) main.c task1.c task2.c task3.c functions.c $(CFLAGS) -o quadtree
 
 run: build
 	./quadtree

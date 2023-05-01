@@ -19,8 +19,10 @@ VALGRIND="valgrind --leak-check=full --track-origins=yes -q --log-file=rezultat_
 make build > /dev/null 2>&1
 var=10
 BEST=80
+#		 0   1  2   3   4   5  6  7  8    9   0  1  2  3     4    5   6    7  8  9
 FACTORS=(0 1000 0 3000 100 700 0 10 100 1000 50 300 0 2000 2500 5000 500 3000 0 2000)
 TESTS=(0 0 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9)
+#	   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
 
 #Cerința 1 - Determinarea statisticilor
 echo "Cerința 1 - Compresia fisierelor"

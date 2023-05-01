@@ -1,3 +1,5 @@
+/* GHINDEA DANIEL-TEODOR 315CB */
+
 #include "header.h"
 TArb initArb() {
     TArb root = malloc(sizeof(TNod));

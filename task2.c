@@ -1,3 +1,5 @@
+/* GHINDEA DANIEL-TEODOR 315CB */
+
 #include "header.h"
 
 void task2(TArb arb, unsigned int *size, FILE *out) {

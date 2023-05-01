@@ -1,3 +1,5 @@
+/* GHINDEA DANIEL-TEODOR 315CB */
+
 #include "header.h"
 
 int frunze(TArb arb) {             // determinarea nr de frunze

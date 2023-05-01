@@ -1,3 +1,5 @@
+/* GHINDEA DANIEL-TEODOR 315CB */
+
 #include "header.h"
 
 int main(int argc, char *argv[])
